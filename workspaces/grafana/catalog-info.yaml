@@ -1,13 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: grafana
+  name: grafana-pruebas
   description: An example of a Backstage application.
   # Example for optional annotations
-  # annotations:
+  annotations:
+    grafana/alert-label-selector: "service=awesome-service"
+    grafana/dashboard-selector: "(tags @> 'my-service' || tags @> 'my-service-slo') && tags @> 'generated'"
+    grafana/overview-dashboard: 'http://grafana/d/qSfS51a4z/some-dashboard?orgId=1&kiosk'
   #   github.com/project-slug: backstage/backstage
   #   backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
-  owner: john@example.com
-  lifecycle: experimental
+  type: plugin-website
+  owner: david@example.com
+  lifecycle: monitoring
