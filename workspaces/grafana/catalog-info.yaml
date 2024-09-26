@@ -7,7 +7,7 @@ metadata:
   annotations:
     grafana/alert-label-selector: "service=awesome-service"
     grafana/dashboard-selector: "(tags @> 'my-service' || tags @> 'my-service-slo') && tags @> 'generated'"
-    grafana/overview-dashboard: 'http://grafana/d/qSfS51a4z/some-dashboard?orgId=1&kiosk'
+    grafana/overview-dashboard: 'http://localhost:4000/d/adz0o1wfn9dkwc/new-dashboard?orgId=1&from=1727293587972&to=1727315187972&viewPanel=1'
   #   github.com/project-slug: backstage/backstage
   #   backstage.io/techdocs-ref: dir:.
 spec:
