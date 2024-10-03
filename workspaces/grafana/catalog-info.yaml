@@ -6,7 +6,7 @@ metadata:
   description: An example of a Backstage application.
   # Example for optional annotations
   annotations:
-    grafana/overview-dashboard: 'http://localhost:3000/d/adz3vnxqwiqrkb/tablero-de-ejemplo?orgId=1&from=1727373085982&to=1727394685983&viewPanel=1'
+    grafana/overview-dashboard: 'http://localhost:3000/d-solo/adz3vnxqwiqrkb/tablero-de-ejemplo?orgId=1&from=1727894224061&to=1727915824061&panelId=1'
     
   #   github.com/project-slug: backstage/backstage
   #   backstage.io/techdocs-ref: dir:.
